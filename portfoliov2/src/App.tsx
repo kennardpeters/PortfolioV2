@@ -3,7 +3,12 @@ import React from 'react';
 import testSVG from './testSVG.svg';
 // import yy from './yy.svg';
 import './App.css';
-import TypedList from './components/TypedList'
+import TypedList from './components/TypedList';
+import Chat from './components/Chat';
+
+
+
+
 
 function App() {
   return (
@@ -21,15 +26,13 @@ function App() {
 
         <br />
 
-        <TypedList text={"Edit src/App.tsx and save to reload."} interval={300} />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <TypedList text={"Please type in a Question below."} interval={200} reTypeAllowed={true} />
+        
+        <br />
+
+        <Chat />
+        
+        
       </header>
       </div>
   );

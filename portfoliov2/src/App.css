@@ -28,6 +28,19 @@
   color: #61dafb;
 }
 
+input::placeholder {
+  color: #61dafb;
+  opacity: 1;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #61dafb;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #61dafb;
+}
+
 .App-title {
   color: #61dafb;
   font-weight: bold;
